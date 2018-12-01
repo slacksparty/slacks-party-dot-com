@@ -1,0 +1,63 @@
+
+
+/* Grid Basics */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* Mobile first */
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 800px) {
+
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

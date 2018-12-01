@@ -1,0 +1,16 @@
+
+CODE {
+	background: #DEDEDE;
+	font-size: 0.8em;
+}
+BLOCKQUOTE {
+	border: 1px solid black;
+	padding: 8px;
+	background: #DDD;
+}
+.anchor A.alink {
+	visibility: hidden;
+}
+.anchor:hover A.alink {
+	visibility: visible;
+}

@@ -1,0 +1,44 @@
+
+.comment {
+	text-align: left;
+	position: relative;
+	word-wrap: break-word;
+}
+.comment IMG {
+	max-width: 100%;
+}
+.comment .info {
+	visibility: hidden;
+	text-align: center;
+	padding: 8px;
+	background: #DDD;
+	border: 1px solid #CCC;
+	position: absolute;
+	top: 0px;
+	left: -195px;
+	width: 180px;
+	z-index: 1;
+	box-shadow: 0px 0px 4px #000;
+	border-radius: 4px;
+}
+.comment:hover .info {
+	visibility: visible;
+}
+
+.comment_add TEXTAREA {
+	width: 100%;
+}
+.comment_add INPUT {
+	width: 100%;
+}
+
+#comment-list-list .blockbody,
+#comment-list-recent .blockbody,
+#comment-list-image .blockbody,
+#comment-list-user .blockbody {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin: 0px;
+	padding: 0px;
+}

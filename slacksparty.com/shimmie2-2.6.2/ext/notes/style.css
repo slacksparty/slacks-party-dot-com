@@ -1,0 +1,87 @@
+.note {
+	display: block;
+
+	background-color: #FFE;
+	border: 1px dashed black;
+	overflow: hidden; 
+	position: absolute; 
+	z-index: 0;
+
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.notep {
+	display: none; 
+	color: #412a21;
+	background-color: #fffdef; 
+	border: #412a21 1px solid; 
+	font-size: 8pt; 
+	margin-top: 0px; 
+	padding: 2px;
+	position: absolute;
+	width: 175px;
+} 
+
+#noteform, #noteEditForm {
+	display: none;
+	position: absolute;
+	width: 250px;
+}
+
+#noteform textarea, #noteEditForm textarea {
+	width: 100%;
+}
+
+/*
+ * imgAreaSelect default style
+ */
+
+.imgareaselect-border1 {
+	background: url(border-v.gif) repeat-y left top;
+}
+
+.imgareaselect-border2 {
+    background: url(border-h.gif) repeat-x left top;
+}
+
+.imgareaselect-border3 {
+    background: url(border-v.gif) repeat-y right top;
+}
+
+.imgareaselect-border4 {
+    background: url(border-h.gif) repeat-x left bottom;
+}
+
+.imgareaselect-border1, .imgareaselect-border2,
+.imgareaselect-border3, .imgareaselect-border4 {
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-handle {
+    background-color: #fff;
+    border: solid 1px #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.imgareaselect-outer {
+    /*background-color: #000;*/
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.imgareaselect-selection {  
+}
+
+/* Makes sure the note block is hidden */
+section#note_system {
+	height: 0;
+}
+section#note_system > .blockbody {
+	padding: 0;
+	border: 0;
+}

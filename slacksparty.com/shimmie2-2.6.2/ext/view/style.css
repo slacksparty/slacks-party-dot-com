@@ -1,0 +1,15 @@
+
+.js .image_info .edit {
+	display: none;
+}
+.js .image_info .view {
+	display: block;
+}
+
+.no-js .image_info .edit {
+	display: block;
+}
+.no-js .image_info .view {
+	display: none;
+}
+

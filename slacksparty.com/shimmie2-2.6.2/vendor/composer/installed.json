@@ -1,0 +1,313 @@
+[
+    {
+        "name": "bower-asset/jquery",
+        "version": "1.12.3",
+        "version_normalized": "1.12.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jquery/jquery-dist.git",
+            "reference": "3a43d7e563314bf32970b773dd31ecf2b90813dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/3a43d7e563314bf32970b773dd31ecf2b90813dd",
+            "reference": "3a43d7e563314bf32970b773dd31ecf2b90813dd",
+            "shasum": null
+        },
+        "type": "bower-asset",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "bower-asset/jquery-timeago",
+        "version": "v1.5.2",
+        "version_normalized": "1.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/rmm5t/jquery-timeago.git",
+            "reference": "67c11951ae9b6020341c1056a42b5406162db40c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/rmm5t/jquery-timeago/zipball/67c11951ae9b6020341c1056a42b5406162db40c",
+            "reference": "67c11951ae9b6020341c1056a42b5406162db40c",
+            "shasum": null
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.4"
+        },
+        "type": "bower-asset",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "bower-asset/js-cookie",
+        "version": "v2.1.1",
+        "version_normalized": "2.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/js-cookie/js-cookie.git",
+            "reference": "5c830fb71a2bd3acce9cb733d692e13316991891"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/js-cookie/js-cookie/zipball/5c830fb71a2bd3acce9cb733d692e13316991891",
+            "reference": "5c830fb71a2bd3acce9cb733d692e13316991891",
+            "shasum": null
+        },
+        "type": "bower-asset",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "bower-asset/mediaelement",
+        "version": "2.21.1",
+        "version_normalized": "2.21.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mediaelement/mediaelement.git",
+            "reference": "6e80b260172f4ddc3b0bbee046775d2ba4c6f9b7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mediaelement/mediaelement/zipball/6e80b260172f4ddc3b0bbee046775d2ba4c6f9b7",
+            "reference": "6e80b260172f4ddc3b0bbee046775d2ba4c6f9b7",
+            "shasum": null
+        },
+        "type": "bower-asset",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ]
+    },
+    {
+        "name": "bower-asset/tablesorter",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/christianbach/tablesorter.git",
+            "reference": "07e0918254df3c2057d6d8e4653a0769f1881412"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/christianbach/tablesorter/zipball/07e0918254df3c2057d6d8e4653a0769f1881412",
+            "reference": "07e0918254df3c2057d6d8e4653a0769f1881412",
+            "shasum": null
+        },
+        "time": "2017-12-20T18:16:21+00:00",
+        "type": "bower-asset",
+        "installation-source": "source",
+        "license": [
+            "MIT,GPL"
+        ]
+    },
+    {
+        "name": "dapphp/securimage",
+        "version": "3.6.6",
+        "version_normalized": "3.6.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dapphp/securimage.git",
+            "reference": "6eea2798f56540fa88356c98f282d6391a72be15"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dapphp/securimage/zipball/6eea2798f56540fa88356c98f282d6391a72be15",
+            "reference": "6eea2798f56540fa88356c98f282d6391a72be15",
+            "shasum": ""
+        },
+        "require": {
+            "ext-gd": "*",
+            "php": ">=5.2.0"
+        },
+        "suggest": {
+            "ext-pdo": "For database storage support",
+            "ext-pdo_mysql": "For MySQL database support",
+            "ext-pdo_sqlite": "For SQLite3 database support"
+        },
+        "time": "2017-11-21T02:29:19+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "securimage.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Drew Phillips",
+                "email": "drew@drew-phillips.com"
+            }
+        ],
+        "description": "PHP CAPTCHA Library",
+        "homepage": "https://www.phpcaptcha.org",
+        "keywords": [
+            "captcha",
+            "security"
+        ]
+    },
+    {
+        "name": "enshrined/svg-sanitize",
+        "version": "0.8.2",
+        "version_normalized": "0.8.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+            "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
+            "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
+            "shasum": ""
+        },
+        "require-dev": {
+            "codeclimate/php-test-reporter": "^0.1.2",
+            "phpunit/phpunit": "^4.7"
+        },
+        "time": "2017-12-06T15:31:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "enshrined\\svgSanitize\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Daryll Doyle",
+                "email": "daryll@enshrined.co.uk"
+            }
+        ],
+        "description": "An SVG sanitizer for PHP"
+    },
+    {
+        "name": "flexihash/flexihash",
+        "version": "v2.0.2",
+        "version_normalized": "2.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pda/flexihash.git",
+            "reference": "497ba5782606d998f8ab0b4e5942e3a799bec018"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pda/flexihash/zipball/497ba5782606d998f8ab0b4e5942e3a799bec018",
+            "reference": "497ba5782606d998f8ab0b4e5942e3a799bec018",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8",
+            "satooshi/php-coveralls": "~1.0",
+            "squizlabs/php_codesniffer": "^2.3",
+            "symfony/config": "^2.0.0",
+            "symfony/console": "^2.0.0",
+            "symfony/filesystem": "^2.0.0",
+            "symfony/stopwatch": "^2.0.0",
+            "symfony/yaml": "^2.0.0"
+        },
+        "time": "2016-04-22T21:03:23+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Flexihash\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Paul Annesley",
+                "email": "paul@annesley.cc",
+                "homepage": "http://paul.annesley.cc"
+            },
+            {
+                "name": "Dom Morgan",
+                "email": "dom@d3r.com",
+                "homepage": "https://d3r.com"
+            }
+        ],
+        "description": "Flexihash is a small PHP library which implements consistent hashing",
+        "homepage": "https://github.com/pda/flexihash"
+    },
+    {
+        "name": "google/recaptcha",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/google/recaptcha.git",
+            "reference": "6990961e664372ddbed7ebc1cd673da7077552e5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/google/recaptcha/zipball/6990961e664372ddbed7ebc1cd673da7077552e5",
+            "reference": "6990961e664372ddbed7ebc1cd673da7077552e5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8"
+        },
+        "time": "2017-03-09T18:57:45+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ReCaptcha\\": "src/ReCaptcha"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Client library for reCAPTCHA, a free service that protect websites from spam and abuse.",
+        "homepage": "http://www.google.com/recaptcha/",
+        "keywords": [
+            "Abuse",
+            "captcha",
+            "recaptcha",
+            "spam"
+        ]
+    },
+    {
+        "name": "ifixit/php-akismet",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/iFixit/php-akismet.git",
+            "reference": "fd4ff50eb577457c1b7b887401663e91e77625ae"
+        },
+        "type": "library",
+        "installation-source": "source"
+    }
+]

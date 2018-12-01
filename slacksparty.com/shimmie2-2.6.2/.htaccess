@@ -1,0 +1,67 @@
+<IfModule mod_dir.c>
+	DirectoryIndex index.php5 index.php
+</IfModule>
+
+<FilesMatch "\.(sqlite|sdb|s3db|db)$">
+	<IfModule mod_authz_host.c>
+		Require all denied
+	</IfModule>
+	<IfModule !mod_authz_host.c>
+		Deny from all
+	</IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# rather than link to images/ha/hash and have an ugly filename,
+	# we link to images/hash/tags.ext; mod_rewrite splits things so
+	# that shimmie sees hash and the user sees tags.ext
+	RewriteRule ^_images/([0-9a-f]{2})([0-9a-f]{30}).*$  images/$1/$1$2 [L]
+	RewriteRule ^_thumbs/([0-9a-f]{2})([0-9a-f]{30}).*$  thumbs/$1/$1$2 [L]
+
+	# any requests for files which don't physically exist should be handled by index.php
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php?q=$1&%{QUERY_STRING} [L]
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	<FilesMatch "([0-9a-f]{32}|\.(gif|jpe?g|png|css|js))$">
+		<IfModule mod_headers.c>
+			Header set Cache-Control "public, max-age=2629743"
+		</IfModule>
+		ExpiresDefault "access plus 1 month"
+	</FilesMatch>
+	#ExpiresByType text/html "now"
+	#ExpiresByType text/plain "now"
+</IfModule>
+
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+	AddOutputFilterByType DEFLATE application/x-javascript application/javascript
+</IfModule>
+
+#EXT: handle_pixel
+AddType image/jpeg  jpg jpeg
+AddType image/gif   gif
+AddType image/png   png
+
+#EXT: handle_ico
+AddType image/x-icon   ico ani cur
+
+#EXT: handle_flash
+AddType application/x-shockwave-flash swf
+
+#EXT: handle_mp3
+AddType audio/mpeg mp3
+
+#EXT: handle_svg
+AddType image/svg+xml  svg svgz
+
+#EXT: handle_video
+AddType video/x-flv    flv
+AddType video/mp4      f4v f4p m4v mp4
+AddType audio/mp4      f4a f4b m4a
+AddType video/ogg      ogv
+AddType video/webm     webm
