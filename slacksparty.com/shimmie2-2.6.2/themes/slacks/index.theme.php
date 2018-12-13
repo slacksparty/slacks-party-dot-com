@@ -23,14 +23,14 @@ class CustomIndexTheme extends IndexTheme {
 		}
 
 		$page->set_title($page_title);
-		$heading = $page_title;
-		if ($page_title == "classics") {
-			$heading = "Classic Posters";
-		} elseif ($page_title == "posters") {
-			$heading = "2018 Poster Contest Entries";
-		} elseif ($page_title == "slacksterpiece") {
-			$heading = "Slacksterpieces";
-		}
+		// $heading = $page_title;
+		// if ($page_title == "classics") {
+		// 	$heading = "Classic Posters";
+		// } elseif ($page_title == "posters") {
+		// 	$heading = "2018 Poster Contest Entries";
+		// } elseif ($page_title == "slacksterpiece") {
+		// 	$heading = "Slacksterpieces";
+		// }
 		$page->set_heading($heading);
 	}
 

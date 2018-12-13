@@ -152,6 +152,9 @@ ARTICLE TABLE {
 	margin: auto;
 }
 
+ARTICLE>#Image_Detailsmain {
+	display: none;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                     specific page types                        *
