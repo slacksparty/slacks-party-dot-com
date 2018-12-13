@@ -95,10 +95,10 @@ class PixelFileHandler extends DataHandlerExtension {
 		$event->add_part("
 			<form>
 				<select class='shm-zoomer'>
-					<option value='full'>Full Size</option>
+					<option value='both'>Fit Both</option>
 					<option value='width'>Fit Width</option>
 					<option value='height'>Fit Height</option>
-					<option value='both'>Fit Both</option>
+					<option value='full'>Full Size</option>
 				</select>
 			</form>
 		", 20);
